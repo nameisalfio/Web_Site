@@ -12,7 +12,6 @@ body {
   font-weight: bolder;
 }
 
-
 a {
   text-decoration: none;
 }
@@ -29,6 +28,12 @@ h5 {
 p {
   line-height: 28px;
   color: #666;
+  font-weight: 300;
+}
+
+.pw{
+  line-height: 28px;
+  color: #fff;
   font-weight: 300;
 }
 
@@ -96,10 +101,6 @@ p {
   display: flex;
   max-width: 1875px;
   align-items: center;
-}
-
-.logo {
-  /*z-index: 1*/
 }
 
 .menu {
@@ -439,6 +440,50 @@ p {
 
 /* ! Content */
 
+.container {
+  text-align: center;
+  padding: 20px;
+  margin-top: 200px; /* Sposta il contenuto verso il basso */
+}
+
+.title {
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+  background-color: #1a3d50;
+  color: #fff;
+}
+
+.tariffario {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 70%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tariffario th, .tariffario td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.tariffario th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.tariffario tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tariffario tr:hover {
+  background-color: #ddd;
+}
+
+
+/* ! Content */
+
 .content {
   max-width: 900px;
   margin: 40px auto;
@@ -464,11 +509,13 @@ p {
 
 .tw a {
   color: white;
-  text-decoration: none; /* Rimuovi la sottolineatura dal link */
+  text-decoration: none;
+  /* Rimuovi la sottolineatura dal link */
 }
 
 .tw i {
-  margin-right: 10px; /* Aggiungi spazio tra l'icona e il testo */
+  margin-right: 10px;
+  /* Aggiungi spazio tra l'icona e il testo */
 }
 
 @media (max-width: 768px) {
