@@ -406,35 +406,35 @@ p {
 }
 
 
-/* ! Panel Blue */
-
-.panel-blue {
-  background: #4bb1e9;
-  padding: 100px 30px;
-}
-
-.panel-blue__text {
-  display: flex;
-  align-items: center;
-}
-
-.dot {
-  height: 250px;
-  width: 250px;
-  background: #6adf91;
-  border-radius: 100%;
-  line-height: 250px;
-  text-align: center;
-  display: inline-block;
-  margin-right: 40px;
-  margin-bottom: 40px;
-}
-
 /* ! Footer */
 
 .footer {
   background: #010e30;
   padding: 50px 0;
+}
+
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.social-icons i {
+  font-size: 24px;
+  /* Regola la dimensione delle icone a tuo piacimento */
+  margin-right: 10px;
 }
 
 /* ! Content */
@@ -462,6 +462,14 @@ p {
   color: #fff
 }
 
+.tw a {
+  color: white;
+  text-decoration: none; /* Rimuovi la sottolineatura dal link */
+}
+
+.tw i {
+  margin-right: 10px; /* Aggiungi spazio tra l'icona e il testo */
+}
 
 @media (max-width: 768px) {
   .mt-sma-0 {
