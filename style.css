@@ -47,6 +47,12 @@ p {
   font-weight: 900;
 }
 
+@media (max-width:768px){
+  .big-text-2{
+    margin-top: 20px;
+  }
+}
+
 .med-text {
   font-size: 40px;
 }
@@ -235,6 +241,7 @@ p {
   height: 100%;
   width: 100%;
   align-items: center;
+  justify-content: center;
 }
 
 .poster__img {
@@ -263,7 +270,8 @@ p {
 
   .poster__img,
   .poster__content {
-    width: 100%;
+    width: 90%;
+    padding: 0 !important;
   }
 }
 
@@ -298,11 +306,16 @@ p {
   .poster2 {
     flex-wrap: wrap;
     height: auto;
+    align-items: center;
+    justify-content: center;
   }
 
-  .poster2__img,
   .poster2__content {
     width: 100%;
+  }
+  .poster2__img{
+    padding: 0!important;
+    width: 90%;
   }
 }
 
@@ -337,6 +350,7 @@ p {
   .bg-cover__text,
   .bg-cover__title {
     width: 100%;
+    padding-left: 0!important;
   }
 }
 
@@ -353,12 +367,14 @@ p {
 
 .grid .col {
   width: 100%;
+  display: flex;
+  justify-content: space-around;
   text-align: center;
 }
 
 @media (max-width: 768px) {
   .grid {
-    flex-wrap: wrap
+    flex-wrap: wrap;
   }
 }
 
@@ -372,16 +388,22 @@ p {
   margin: 0 auto;
   align-items: center;
   text-align: center;
+  
 }
 
 .grid2 .col {
   width: 100%;
+
 }
 
 @media (max-width: 768px) {
   .grid2 {
-    flex-wrap: wrap
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 3em;
   }
+  
+  
 }
 
 /* ! Carousel */
@@ -404,16 +426,33 @@ p {
   text-align: center;
   background-size: cover;
   background-position: center;
+  border: solid 4px #2d5c75;
+  
 }
 
-
+@media(max-width:768px){
+  .main-carousel{
+   align-items: center;
+  }
+  .carousel-cell{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-cell__content{
+    width: 80%;
+    height: 80%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /* ! Footer */
 
 .footer {
   background: #010e30;
   padding: 50px 0;
 }
-
 
 .social-icons {
   list-style: none;
@@ -448,7 +487,7 @@ p {
 }
 
 .title {
-  font-size: 30px;
+  font-size: 54px;
   font-family: 'Courier New', Courier, monospace;
   padding: 20px;
   background-color: #1a3d50;
@@ -463,7 +502,11 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
-
+@media(max-width:768px){
+  .tariffario{
+    margin-top: 100px;
+  }
+}
 .tariffario th,
 .tariffario td {
   padding: 8px;
@@ -513,6 +556,12 @@ p {
 
 .mt-3 {
   margin-top: 150px;
+}
+
+@media(max-width: 768px){
+  .mt-3{
+    margin-top:50px;
+  }
 }
 
 .tw {
