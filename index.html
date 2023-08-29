@@ -2,21 +2,28 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NCC Ruggieri Felice</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-    crossorigin="anonymous" />
+    crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css"
     integrity="sha512-ztsAq/T5Mif7onFaDEa5wsi2yyDn5ygdVwSSQ4iok5BPJQGYz1CoXWZSA7OgwGWrxrSrbF0K85PD5uLpimu4eQ=="
-    crossorigin="anonymous" />
+    crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:wght@300;400;700;900&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"
+    integrity="sha512-Nx/M3T/fWprNarYOrnl+gfWZ25YlZtSNmhjHeC0+2gCtyAdDFXqaORJBj1dC427zt3z/HwkUpPX+cxzonjUgrA=="
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 
 </head>
 
@@ -24,7 +31,7 @@
 
   <div class="header">
     <div class="logo">
-      <img src="logo.jpg" alt="">
+      <img src="sources/logo.png" alt="">
     </div>
     <ul class="menu">
       <li><a href="#Servizi">Servizi</a></li>
@@ -46,13 +53,13 @@
       <a href="tel:+393487678837" class="button">Prenota ora</a>
     </div>
     <video autoplay muted loop id="video-back">
-      <source src="video-back.mp4" type="video/mp4">
+      <source src="sources/video-back.mp4" type="video/mp4">
     </video>
   </div>
 
   <div class="poster mt-3" id="Servizi">
     <div class="poster__img reveal">
-      <img src="etna.jpg" alt="">
+      <img src="sources/etna.png" alt="">
     </div>
     <div class="poster__content reveal">
       <h3 class="big-text-2">Escursioni sull'etna</h3>
@@ -108,48 +115,50 @@
         conveniente e affidabile.</p>
     </div>
     <div class="poster2__img reveal">
-      <img src="tragitti.jpg" alt="">
+      <img src="sources/tragitti.png" alt="">
     </div>
   </div>
 
   <div class="main-carousel med-text mt-2" data-flickity='{ "cellAlign": "left", "contain": true }'>
     <div class="carousel-cell">
-      <div class="carousel-cell__content zoom tw intro-text-2" style="background-image: url('taormina.jpg');">
+      <div class="carousel-cell__content zoom tw intro-text-2" style="background-image: url('sources/taormina.png');">
         Taormina
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-cell__content zoom tw intro-text-2" style="background-image: url('etna\ rigugio.jpg');">
+      <div class="carousel-cell__content zoom tw intro-text-2"
+        style="background-image: url('sources/etna\ rigugio.png');">
         Etna
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-cell__content zoom tw intro-text-2" style="background-image: url('palermo.jpg');">
+      <div class="carousel-cell__content zoom tw intro-text-2" style="background-image: url('sources/palermo.png');">
         Palermo
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-cell__content zoom tw intro-text-2" style="background-image: url('valle\ dei\ templi.jpg');">
+      <div class="carousel-cell__content zoom tw intro-text-2"
+        style="background-image: url('sources/valle\ dei\ templi.png');">
         Agrigento
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-cell__content zoom tw intro-text-2" style="background-image: url('acitrezza.jpg');">
+      <div class="carousel-cell__content zoom tw intro-text-2" style="background-image: url('sources/acitrezza.png');">
         Acitrezza
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-cell__content tw intro-text-2" style="background-image: url('augusta.jpg');">
+      <div class="carousel-cell__content tw intro-text-2" style="background-image: url('sources/augusta.png');">
         Augusta
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-cell__content tw intro-text-2" style="background-image: url('siracusa.jpg');">
+      <div class="carousel-cell__content tw intro-text-2" style="background-image: url('sources/siracusa.png');">
         Siracusa
       </div>
     </div>
     <div class="carousel-cell">
-      <div class="carousel-cell__content tw intro-text-2" style="background-image: url('cefalu.jpg');">
+      <div class="carousel-cell__content tw intro-text-2" style="background-image: url('sources/cefalu.png');">
         Cefalù
       </div>
     </div>
@@ -202,7 +211,7 @@
 
         <h4 class="normal-text tw">Contatti</h4>
         <p class="normal-text tw">
-          <img src="cornetta_telefonica.png" alt="icona" style="vertical-align: middle;">
+          <img src="sources/cornetta_telefonica.png" alt="icona" style="vertical-align: middle;">
           <a href="tel:+393487678837">+39 348 7678837</a>
         </p>
 
@@ -211,12 +220,12 @@
       <div class="col reveal">
         <h4 class="normal-text tw">Social</h4>
         <p class="normal-text tw">
-          <img src="insta.png" alt="icona" style="vertical-align: middle;">
+          <img src="sources/insta.png" alt="icona" style="vertical-align: middle;">
           <a href="" style="font-size: 16px">@nome_instagram</a>
         </p>
         <br />
         <p class="normal-text tw">
-          <img src="facebook.png" alt="icona" style="vertical-align: middle; margin-right: 20px;">
+          <img src="sources/facebook.png" alt="icona" style="vertical-align: middle; margin-right: 20px;">
           <a href="" style="font-size: 16px">nome_facebook</a>
         </p>
       </div>
@@ -235,49 +244,6 @@
 
     </div>
   </footer>
-
-
-  <!-- Jquery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"
-    integrity="sha512-Nx/M3T/fWprNarYOrnl+gfWZ25YlZtSNmhjHeC0+2gCtyAdDFXqaORJBj1dC427zt3z/HwkUpPX+cxzonjUgrA=="
-    crossorigin="anonymous"></script>
-
-  <script>
-    $(document).ready(function () {
-
-      /* Open Panel */
-      $(".hamburger").on('click', function () {
-        $(".menu").toggleClass("menu--open");
-      });
-
-    });
-
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 50) {
-        $('.header').fadeOut();
-      } else {
-        $('.header').fadeIn();
-      }
-    });
-
-    $(document).ready(function () {
-      $("a[href^='#']").on('click', function (event) {
-        event.preventDefault();
-        var target = this.hash;
-        $('html, body').animate({
-          scrollTop: $(target).offset().top
-        }, 500);
-      });
-    });
-
-
-    ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1000, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 400 });
-
-    ScrollReveal().reveal('.zoom', { duration: 1000, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 150, scale: 0.65, mobile: false });
-
-  </script>
 
 </body>
 
